@@ -25,6 +25,16 @@ div.box2 {
   margin-left: -10px;
 }
 
+div.box4 {
+  border: 2px solid #9900cc;
+  background-color: #9900cc;
+  opacity: 0.5;
+  border-radius: 4px;
+  width: 60vw;
+  height: 25vw;
+  margin-left:-15px;
+}
+
 div.machine {
   font-style: italic;
   color: #000;
@@ -73,4 +83,9 @@ div.video {
 div.instructions {
   border: 2px solid #9900cc;
   border-radius: 4px;
+}
+
+div.muscles {
+  color: #fff;
+  margin-top: -10px;
 }
