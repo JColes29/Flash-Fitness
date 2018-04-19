@@ -2,3 +2,8 @@ body {
   background-color: #e6ccff;
   font-family: "Arvo", Times;
 }
+
+div.title {
+  color: #ffffff;
+  background-color: #9900cc;
+}
