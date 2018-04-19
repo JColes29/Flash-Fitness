@@ -1,4 +1,29 @@
 body {
   font-family: "Arvo", Times;
-  background-color: #f2ccff;
+  background-color: #ffe6ff;
+}
+
+div.box {
+  border: 2px solid #df80ff;
+  background-color: #df80ff;
+  opacity: 20%;
+  border-radius: 4px;
+  width: 200vw;
+  height: 15vw;
+  margin-left: -40px;
+}
+
+div.title {
+  font-style: italic;
+  color: #000;
+  height: 10vw;
+  margin-top: -15px;
+  margin-left: 40px;
+  font-size: 3vw;
+  text-align: left;
+}
+div.subtitle {
+  font-size: 2.5vw;
+  margin-top: -30px;
+  text-align: left;
 }
