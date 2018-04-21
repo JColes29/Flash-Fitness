@@ -149,7 +149,7 @@ textarea.first {
 div.textarea1 p {
   font-size: 3vw;
   margin-left: 20px;
-width: 100vw;
+width: 70vw;
 padding-top: 15px;
 }
 
@@ -163,7 +163,7 @@ textarea {
 
 textarea.second {
   width: 42vw;
-  margin-left: 240px;
+  margin-left: 220px;
   margin-top: -610px;
   height: 120vw;
  background-image: -webkit-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
