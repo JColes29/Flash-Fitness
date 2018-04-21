@@ -122,3 +122,12 @@ div.muscles {
   color: #fff;
   margin-top: -10px;
 }
+
+textarea.first {
+  width: 45vw;
+  margin-left: 10px;
+  border: 2px dashed #9900cc;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 60vw;
+}
