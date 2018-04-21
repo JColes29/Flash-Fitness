@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<title>Flash-Fitness: Qr Scanner</title>
     <link id="pagestyle" rel="stylesheet" type="text/css" href="fit.css"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
@@ -80,9 +81,9 @@ Muscles worked:
 <h2> Save Workout Below </h2>
 </div>
 
-<div class="textarea1">
+<div class="textarea1" id="ta1">
   <p>Enter Your Username......................Enter Workout - Sets | Reps</p>
-<textarea class ="first" rows="4" cols="50" name="usernames" form="usrform"></textarea>
+<textarea id="t1" class ="first" rows="4" cols="50" name="usernames" form="usrform"></textarea>
 </div>
 
 <div class="textarea2">
@@ -97,9 +98,16 @@ Muscles worked:
 }
 </script>
 
-<input class="button" type="button" onclick="clickAlert()" value="Save Workout!">
+<input class="button" type="button" value="Save Workout!" onclick="functionmain()">
+<textarea id="recieve1" rows="4" cols="50" name="userrec" form="usform"></textarea>
+<script>
+function functionmain() {
+    var x = document.getElementById("t1").value;
+    document.getElementById("recieve1").innerHTML = x;
+}
+</script>
+<div class="textbox"></div>
 
-</div>
 
 </body>
 </html>
