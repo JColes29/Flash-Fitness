@@ -39,15 +39,19 @@ div.box4 {
 
 div.box5 {
   border: 2px solid #9900cc;
-  background-color: #9900cc;
-  opacity: 0.5;
+  background-color: #fff;
+
   border-radius: 4px;
   width: 50vw;
   height: 25vw;
   margin-left: 230px;
   margin-top: -130px;
 }
-
+div.mag img {
+  width: 27vw;
+  height: 22vw;
+  margin-top: -30px;
+}
 div.machine {
   font-style: italic;
   color: #000;
@@ -56,6 +60,12 @@ div.machine {
 
     margin-left: -5px;
     opacity: 1.0;
+}
+
+p {
+  font-size: 3.5vw;
+  width: 40vw;
+  margin-top: -2px;
 }
 
 div.title {
