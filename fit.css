@@ -47,6 +47,22 @@ div.box5 {
   margin-left: 230px;
   margin-top: -120px;
 }
+
+div.box6 {
+  border: 2px solid #9900cc;
+  background-color: #9900cc;
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 100vw;
+  height: 10vw;
+  margin-top: 20px;
+}
+
+div.box6 h2 {
+  font-size: 4vw;
+  text-align: center;
+  color: #00000;
+}
 div.mag img {
   width: 27vw;
   height: 22vw;
