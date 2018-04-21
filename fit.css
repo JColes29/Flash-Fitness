@@ -1,6 +1,7 @@
 body {
   font-family: "Arvo", Times;
   background-color: #ffe6ff;
+  width: 100vw;
 }
 
 div.box {
@@ -149,7 +150,7 @@ textarea.first {
 div.textarea1 p {
   font-size: 3vw;
   margin-left: 20px;
-width: 70vw;
+width: 90vw;
 padding-top: 15px;
 }
 
