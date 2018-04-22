@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<title>Flash-Fitness: Qr Scanner</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="fit.css"/>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <body>
+
+<div class="title" style="font-family:"Arvo"">
+<h1> Flash-Fitness </h1>
+</div><div class="box"></div>
+
+
+<div class="subtitle">
+<h3> "Get ready to Kick some Flash!" </h3>
+</div>
+
+
+<div class="machine">
+  <h3> Tricep Pull Downs </h3>
+
+</div>
+<div class="box2"></div>
+
+<div class="logo">
+  <img src="logo2.png"  style=width:110px;height:100px;>
+</div>
+
+<!-- !!ALL VIDEO RIGHTS OWNED BY KENT LEISURE TRAINING !!-->
+<div class="video">
+  <video width="100%" height="100%" controls>
+    <source src="TPD.mp4" type="video/mp4">
+
+  </video>
+</div>
+
+<div class="instructions">
+<ul>
+  <li>
+  -	Position your feet at shoulder’s width apart with knees bent. </li>
+  <li>
+  -	 Now pull the bar down with your forearms parallel the floor, elbows close to the body and wrist straight.</li>
+  <li>
+  -	Push the bar down towards to floor, until the arms are full extended downwards </li>
+  <li>
+  -	 Moving your forearms return to the starting position. Remain there for a count of one and then repeat the above steps.
+</li>
+</ul>
+</div>
+
+
+</div>
+<div class="box4">
+<div class="muscles">
+<ul>
+Muscles worked:
+<li>-	Triceps </li>
+<li>- Forearms </li>
+<li></li>
+<li></li>
+</ul>
+</div>
+
+<div class="box5">
+<div class="mag">
+<p> Click here for the latest fitness magazine!</p>
+<a href="https://www.fitnessmagazine.com/workout/real-plans/">
+<img src="logo2.png">
+</a>
+</div>
+</div>
+
+<div class="box6">
+<h2> Save Workout Below </h2>
+</div>
+
+<div class="textarea1" id="ta1">
+  <p>Enter Your Username......................Enter Workout - Sets | Reps</p>
+<textarea id="t1" class ="first" rows="4" cols="50" name="usernames" form="usrform"></textarea>
+</div>
+
+<div class="textarea2">
+<textarea id="t2" class ="second" rows="4" cols="50" name="workouts" form="usrform"></textarea>
+</div>
+
+<div class="save">
+
+  <script>
+  function clickAlert() {
+    alert("Workout Saved!");
+}
+</script>
+
+<input class="button" type="button" value="Save Workout!" onclick="functionmain()">
+
+<textarea id="recieve1" class ="reciever" rows="4" cols="50" name="userrec" form="usform"></textarea>
+
+<textarea id="recieve2" class ="reciever2" rows="4" cols="50" name="userrec2" form="usform"></textarea>
+
+<script>
+function functionmain() {
+    var x = document.getElementById("t1").value;
+    document.getElementById("recieve1").innerHTML = x;
+    var y = document.getElementById("t2").value;
+    document.getElementById("recieve2").innerHTML = y;
+
+    window.onbeforeunload = function() {
+     $('recieve1').each(function(){
+        var id = $(this).attr('id');
+        var value = $(this).val();
+
+       localStorage.setItem(id, value);
+    });
+}
+window.onload = function() {
+    $('recieve2').each(function(){
+       var id = $(this).attr('id');
+       var text2 = localStorage.getItem(id);
+       if (text2 !== null) $('#'+id).val(text2);
+    });
+}
+}
+</script>
+<div class="textbox"></div>
+
+
+</body>
+</html>
