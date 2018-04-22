@@ -189,3 +189,15 @@ input.button {
   border-radius: 8px;
   colour: #000;
 }
+
+textarea.reciever {
+  width: 43vw;
+  margin-bottom: -7px;
+  border-radius: 8px;
+}
+textarea.reciever2 {
+  width: 40vw;
+  margin-left: 220px;
+  margin-top: -150px;
+  border-radius: 8px;
+}

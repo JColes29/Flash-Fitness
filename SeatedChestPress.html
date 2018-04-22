@@ -87,7 +87,7 @@ Muscles worked:
 </div>
 
 <div class="textarea2">
-<textarea class ="second" rows="4" cols="50" name="workouts" form="usrform"></textarea>
+<textarea id="t2" class ="second" rows="4" cols="50" name="workouts" form="usrform"></textarea>
 </div>
 
 <div class="save">
@@ -99,11 +99,17 @@ Muscles worked:
 </script>
 
 <input class="button" type="button" value="Save Workout!" onclick="functionmain()">
-<textarea id="recieve1" rows="4" cols="50" name="userrec" form="usform"></textarea>
+
+<textarea id="recieve1" class ="reciever" rows="4" cols="50" name="userrec" form="usform"></textarea>
+
+<textarea id="recieve2" class ="reciever2" rows="4" cols="50" name="userrec2" form="usform"></textarea>
+
 <script>
 function functionmain() {
     var x = document.getElementById("t1").value;
     document.getElementById("recieve1").innerHTML = x;
+    var y = document.getElementById("t2").value;
+    document.getElementById("recieve2").innerHTML = y;
 }
 </script>
 <div class="textbox"></div>
