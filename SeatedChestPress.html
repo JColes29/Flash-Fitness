@@ -110,6 +110,22 @@ function functionmain() {
     document.getElementById("recieve1").innerHTML = x;
     var y = document.getElementById("t2").value;
     document.getElementById("recieve2").innerHTML = y;
+
+    window.onbeforeunload = function() {
+     $('recieve1').each(function(){
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        
+       localStorage.setItem(id, value);
+    });
+}
+window.onload = function() {
+    $('recieve2').each(function(){
+       var id = $(this).attr('id');
+       var text2 = localStorage.getItem(id);
+       if (text2 !== null) $('#'+id).val(text2);
+    });
+}
 }
 </script>
 <div class="textbox"></div>
